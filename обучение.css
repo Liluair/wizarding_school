@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+.top-menu {
+  margin: 0 60px;
+  position: relative;
+  background: #1f16aa;    
+  box-shadow: 
+    inset 1px 0 0 rgba(255,255,255,.1), 
+    inset -1px 0 0 rgba(255,255,255,.1), 
+    inset 150px 0 150px -150px rgba(255,255,255,.12), 
+    inset -150px 0 150px -150px rgba(255,255,255,.12);
+}
+.top-menu:before,
+.top-menu:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+.top-menu:before {
+  top: 0;
+  border-bottom: 1px dashed rgb(39, 74, 189);
+}
+.top-menu:after {
+  bottom: 0;
+  border-top: 1px dashed rgb(12, 35, 138);
+}
+.menu-main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu-main:before, 
+.menu-main:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 0;
+  top: 8px;
+  border-top: 18px solid #1e2ebd;
+  border-bottom: 18px solid #370df5;
+  transform: rotate(360deg);
+  z-index: -1;
+}
+.menu-main:before {
+  left: -30px;
+  border-left: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main:after {
+  right: -30px;
+  border-right: 12px solid rgba(255, 255, 255, 0);
+}
+.menu-main li {
+  display: inline-block;
+  margin-right: -4px;
+}
+.menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: 'PT Sans Caption', sans-serif;
+  color: white;
+  transition: .3s linear;
+}
+.menu-main a.current,
+.menu-main a:hover {background: rgba(243, 255, 79, 0.856);}
+@media (max-width: 680px) {
+.top-menu {margin: 0;}
+.menu-main li {
+  display: block;
+  margin-right: 0;
+}
+.menu-main:before, 
+.menu-main:after {content: none;}
+.menu-main a {display: block;}
+}
+html {
+  background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/3986532/pub_5f8a19ca5282a97827458bcd_5f8a1e3f4ab7c3765a422184/scale_1200);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  background-color: aliceblue;
+  opacity: 0.5;
+}
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+h4{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  text-align: justify;
+}

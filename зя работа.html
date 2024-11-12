@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="зя работа.css">
+        <link rel="stylesheet" type="text/JavaScript" href="5я работа.js">
+        <meta name="copyright" content="Senina Angelina">
+        <meta charset="UTF-8">
+        <title>Офицальный сайт школы чародейства и волшебства Хогвартс</title>
+        <nav class="top-menu">
+            <ul class="menu-main">
+              <li><a href="зя работа.html" target="_blank"class="current">Главная</a></li>
+              <li><a href="Общежитие.html" target="_blank">Общежитие</a></li>
+              <li><a href="Обучение.html" target="_blank">Обучение</a></li>
+              <li><a href="Справка.html" target="_blank">Поступление</a></li>
+            </ul>
+          </nav>   
+    </head>
+    <body>
+        <h1 align="center">Офицальный сайт школы чародейства и волшебства Хогвартс</h1>
+        <h3>Хогвартс-это лучшая школа чародейства и волшебства в мире.</h3>
+        <h3>Самое защищенное место.</h3>
+        <h3>Максимум из вашего ребёнка высосут душу. Но дементоров мы выгнали, так что эти риски сводятся к минимуму.</h3>
+        <h5>*Ответственность за жизнь и здоровье детей несут родители или законные опекуны, школа не имеет к этому никакого отношения. Если вы согласны с этим, то кликайте по кнопке снизу</h5>
+        <div>
+
+          <a class="button" href="Справка.html">Поступить</a>
+        
+        </div>
+        <p>Нажмите на кнопку, чтобы увидеть геолокацию.</p>
+
+<button onclick="getLocation()">Показать местаположение</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+<div class="tenor-gif-embed" data-postid="16440465" data-share-method="host" data-aspect-ratio="1.16364" data-width="100%"><a href="https://tenor.com/view/owl-flying-just-got-here-omw-on-my-way-gif-16440465">Owl Flying Sticker</a>from <a href="https://tenor.com/search/owl-stickers">Owl Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </body>
+</html>
